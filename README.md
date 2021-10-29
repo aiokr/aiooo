@@ -1,4 +1,4 @@
-# aiooo ｜ aio的个人博客
+# aiooo ｜ aio的笔记本
 
 - [文章列表](https://github.com/aiokr/aiooo/issues)
 - [所有标签](https://github.com/aiokr/aiooo/labels)
