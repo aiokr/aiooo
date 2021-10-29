@@ -13,7 +13,7 @@ jobs:
       - name: Auto Issue List in README
         uses: aiokr/aiooo@main
         with:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: "${{ secrets.ACTION_ISSUE }}"
           pattern: "<!-- issueTable -->"
           state: "open"
           labels: "BLOG"
@@ -24,8 +24,8 @@ jobs:
         with:
           message: README.md has been re-written
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACTION_ISSUE }}
       - name: push
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.ACTION_ISSUE }}
